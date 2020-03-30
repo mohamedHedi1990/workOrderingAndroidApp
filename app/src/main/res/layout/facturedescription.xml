@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_height="fill_parent" tools:ignore="MissingConstraints"
+        android:padding="50px"
+                android:background="@drawable/border">
+
+            <TextView
+                    android:id="@+id/tasksDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tasks done"
+                    android:textSize="10pt">
+            </TextView>
+            <EditText
+                    android:id="@+id/tasksDoneText"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:layout_width="fill_parent">
+            </EditText>
+            <TextView
+                    android:id="@+id/tasksNotDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tasks not done"
+                    android:textSize="10pt">
+            </TextView>
+            <EditText
+                    android:id="@+id/tasksNotDoneText"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:layout_width="fill_parent">
+            </EditText>
+            <TextView
+                    android:id="@+id/cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cost"
+                    android:textSize="10pt">
+            </TextView>
+            <EditText
+                    android:id="@+id/costText"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:inputType="textMultiLine"
+                    android:layout_width="fill_parent">
+            </EditText>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_height="fill_parent" tools:ignore="MissingConstraints"
+    android:gravity="center">
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send Invoice"
+                android:id="@+id/sendInvoiceButton"
+                android:layout_alignParentBottom="true"
+
+        />
+
+    </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
